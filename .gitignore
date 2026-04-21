@@ -18,7 +18,6 @@ logs/*.log
 
 # Outputs (generated artifacts)
 outputs/models/
-outputs/reports/
 
 # Keep figures for portfolio
 !outputs/figures/.gitkeep

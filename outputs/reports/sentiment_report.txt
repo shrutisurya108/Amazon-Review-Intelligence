@@ -1,0 +1,28 @@
+============================================================
+  SENTIMENT ANALYSIS REPORT
+  Amazon Electronics Reviews — NLP Pipeline
+============================================================
+
+  Total reviews analyzed   : 24,191
+  Processing time          : 283.2s
+
+  VADER (Baseline) Results
+  ------------------------
+  Positive  : 21,071  (87.1%)
+  Neutral   :  1,379  (5.7%)
+  Negative  :  1,741  (7.2%)
+  Agreement with star ratings : 85.7%
+
+  DistilBERT Results
+  ------------------
+  Positive  : 17,342  (71.7%)
+  Negative  :  6,849  (28.3%)
+  Avg confidence            : 0.973
+  Agreement with star ratings : 79.3%
+
+  Model Comparison
+  ----------------
+  VADER vs DistilBERT agreement : 74.8%
+  DistilBERT improvement over VADER: +-6.4%
+
+============================================================
