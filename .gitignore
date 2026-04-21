@@ -22,3 +22,5 @@ outputs/reports/
 
 # Keep figures for portfolio
 !outputs/figures/.gitkeep
+
+venv/
