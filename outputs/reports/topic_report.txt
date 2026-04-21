@@ -1,0 +1,99 @@
+=================================================================
+  LDA TOPIC MODELING REPORT
+  Amazon Electronics Reviews — NLP Pipeline
+=================================================================
+
+  Total reviews analyzed : 21,737
+  Number of topics       : 8
+  Coherence score (c_v)  : 0.4121
+  (c_v range: 0–1, good models score 0.4–0.7)
+
+-----------------------------------------------------------------
+  Topic 00 — KIDS_TABLETS
+  Reviews : 2,216 (10.2% of corpus)
+  Ratings : {1: 17, 2: 29, 3: 105, 4: 616, 5: 1449}
+  Keywords: tablet(0.346) | easy(0.036) | video(0.028) | fast(0.027) | learn(0.025) | control(0.025) | parental(0.019) | awesome(0.019) | son(0.016) | slow(0.013) | navigate(0.012) | sound(0.012)
+
+  Top example reviews:
+    [4★ | score=0.510] my son loves it and is easy to use and has parental controls so he can't buy stuff without permission...
+    [4★ | score=0.510] my son loves it and is easy to use and has parental controls so he can't buy stuff without permission...
+    [4★ | score=0.510] my son loves it and is easy to use and has parental controls so he can't buy stuff without permission...
+
+-----------------------------------------------------------------
+  Topic 01 — CUSTOMER_SERVICE_ISSUES
+  Reviews : 444 (2.0% of corpus)
+  Ratings : {1: 26, 2: 31, 3: 45, 4: 104, 5: 238}
+  Keywords: break(0.032) | card(0.032) | account(0.026) | return(0.024) | easily(0.023) | service(0.019) | page(0.018) | button(0.018) | help(0.017) | open(0.017) | fit(0.014) | reason(0.014)
+
+  Top example reviews:
+    [1★ | score=0.541] The advertisement promises a 4 channel boat. It is not - only one channel. Consequently, kids can't play simultaneously ...
+    [1★ | score=0.541] The advertisement promises a 4 channel boat. It is not - only one channel. Consequently, kids can't play simultaneously ...
+    [5★ | score=0.534] love it just like my other one just better!!! since I already own a kindle I knew this was what I wanted. Just needed a ...
+
+-----------------------------------------------------------------
+  Topic 02 — APPS_ENTERTAINMENT
+  Reviews : 1,319 (6.1% of corpus)
+  Ratings : {1: 34, 2: 26, 3: 115, 4: 439, 5: 705}
+  Keywords: app(0.123) | game(0.095) | play(0.088) | screen(0.085) | download(0.041) | able(0.027) | google(0.025) | prime(0.022) | store(0.019) | music(0.017) | load(0.016) | web(0.015)
+
+  Top example reviews:
+    [5★ | score=0.628] Good price for the buy , I use it mostly to play games. Only downside is Amazon app store doesn't have as many games as ...
+    [3★ | score=0.583] I had to sideload google play services to be able to download from the google play store or use google chrome as a web b...
+    [3★ | score=0.583] I had to sideload google play services to be able to download from the google play store or use google chrome as a web b...
+
+-----------------------------------------------------------------
+  Topic 03 — DEVICE_FEATURES
+  Reviews : 2,203 (10.1% of corpus)
+  Ratings : {1: 214, 2: 108, 3: 107, 4: 531, 5: 1243}
+  Keywords: device(0.038) | charge(0.033) | feature(0.032) | day(0.023) | grandson(0.022) | replace(0.020) | wife(0.020) | reading(0.015) | memory(0.015) | travel(0.014) | turn(0.013) | hour(0.013)
+
+  Top example reviews:
+    [5★ | score=0.678] My wife uses the Tap mostly to listen to music. She loves the fact that she can take it into aNY room of the house. No m...
+    [5★ | score=0.603] I travel internationally at least once a year and wanted an EASY way to charge my Kindle Fire HD. The design of this sys...
+    [5★ | score=0.594] They are Super , had them in my outdoor weather station sensors for 10 months and in with all types of weather condition...
+
+-----------------------------------------------------------------
+  Topic 04 — BATTERY_VALUE
+  Reviews : 7,547 (34.7% of corpus)
+  Ratings : {1: 492, 2: 281, 3: 425, 4: 1153, 5: 5196}
+  Keywords: battery(0.107) | long(0.044) | quality(0.027) | far(0.026) | life(0.025) | brand(0.022) | time(0.021) | money(0.019) | cheap(0.019) | lot(0.017) | value(0.017) | deal(0.015)
+
+  Top example reviews:
+    [5★ | score=0.819] Excellent power and price. You can't beat this deal on high quality batteries. Even the club warehouse prices for their ...
+    [5★ | score=0.819] Excellent power and price. You can't beat this deal on high quality batteries. Even the club warehouse prices for their ...
+    [5★ | score=0.814] Really great value for batteries. So far have tried 12 of the 48 batteries I ordered and they are all working perfectly ...
+
+-----------------------------------------------------------------
+  Topic 05 — GIFT_RECOMMENDATIONS
+  Reviews : 5,125 (23.6% of corpus)
+  Ratings : {1: 34, 2: 43, 3: 147, 4: 1207, 5: 3694}
+  Keywords: kid(0.094) | year(0.071) | gift(0.037) | recommend(0.032) | daughter(0.032) | time(0.032) | ipad(0.031) | child(0.031) | christmas(0.028) | perfect(0.027) | set(0.023) | case(0.022)
+
+  Top example reviews:
+    [5★ | score=0.708] Bought 3 of these for my 4 year old, 6 year old and 9 year old. Perfect for all ages. I love the amazon free time year s...
+    [5★ | score=0.708] Bought 3 of these for my 4 year old, 6 year old and 9 year old. Perfect for all ages. I love the amazon free time year s...
+    [5★ | score=0.708] Bought 3 of these for my 4 year old, 6 year old and 9 year old. Perfect for all ages. I love the amazon free time year s...
+
+-----------------------------------------------------------------
+  Topic 06 — MEDIA_CAMERA
+  Reviews : 737 (3.4% of corpus)
+  Ratings : {1: 16, 2: 9, 3: 22, 4: 204, 5: 486}
+  Keywords: book(0.121) | watch(0.059) | internet(0.033) | movie(0.032) | friendly(0.027) | camera(0.025) | picture(0.025) | color(0.023) | phone(0.022) | version(0.022) | model(0.018) | email(0.018)
+
+  Top example reviews:
+    [5★ | score=0.474] Great for Watching sports Events. Facebook, very Fast. Very nice design....
+    [5★ | score=0.467] Very rugged design. My nieces absolutely love this....
+    [5★ | score=0.467] Very rugged design. My nieces absolutely love this....
+
+-----------------------------------------------------------------
+  Topic 07 — KINDLE_EREADERS
+  Reviews : 2,146 (9.9% of corpus)
+  Ratings : {1: 7, 2: 3, 3: 58, 4: 487, 5: 1591}
+  Keywords: kindle(0.148) | fire(0.112) | easy(0.111) | read(0.098) | size(0.046) | enjoy(0.038) | light(0.032) | reader(0.025) | small(0.021) | user(0.021) | upgrade(0.016) | hold(0.014)
+
+  Top example reviews:
+    [5★ | score=0.615] The Fire HD 8 is the perfect size EReader. Big enough to see the text but small enough to hold comfortably....
+    [5★ | score=0.615] The Fire HD 8 is the perfect size EReader. Big enough to see the text but small enough to hold comfortably....
+    [5★ | score=0.613] I extremely enjoy and like my Kindle Voyage Reader a whole bunch! I like reading on it a whole bunch, especially my Livi...
+
+=================================================================
