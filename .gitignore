@@ -1,0 +1,24 @@
+# Data (too large for git)
+data/raw/
+data/interim/
+data/processed/
+
+# Credentials
+.env
+kaggle.json
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.DS_Store
+
+# Logs (keep structure, not content)
+logs/*.log
+
+# Outputs (generated artifacts)
+outputs/models/
+outputs/reports/
+
+# Keep figures for portfolio
+!outputs/figures/.gitkeep
