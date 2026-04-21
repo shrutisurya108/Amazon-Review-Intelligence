@@ -1,7 +1,11 @@
 # Data (too large for git)
 data/raw/
 data/interim/
-data/processed/
+
+# Keep only the master processed file for deployment
+data/processed/reviews_raw.parquet
+data/processed/reviews_processed.parquet
+data/processed/reviews_sentiment.parquet
 
 # Credentials
 .env
