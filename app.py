@@ -18,6 +18,17 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+# Cloud environment setup — download models if not present
+import subprocess
+import spacy as _spacy_check
+try:
+    _spacy_check.load("en_core_web_sm")
+except OSError:
+    subprocess.run(
+        ["python", "-m", "spacy", "download", "en_core_web_sm"],
+        check=True, capture_output=True,
+    )
+
 # Download NLTK data if not present (required on Streamlit Cloud)
 import nltk
 import os

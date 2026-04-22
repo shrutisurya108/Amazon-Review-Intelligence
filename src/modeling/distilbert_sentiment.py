@@ -22,34 +22,34 @@ from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
-# Suppress the clean_up_tokenization_spaces FutureWarning
 warnings.filterwarnings("ignore", category=FutureWarning, module="transformers")
-os.environ["TOKENIZERS_PARALLELISM"] = "false"  # avoids fork warnings on macOS
+warnings.filterwarnings("ignore", category=UserWarning, module="transformers")
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
+# Model is loaded lazily — only when run_distilbert() is called
+# This prevents heavy loading during Streamlit app startup
+_clf = None
 
 
 def load_model():
-    """
-    Loads the DistilBERT sentiment pipeline.
-    Uses cached weights after first download.
-    Returns HuggingFace pipeline object.
-    """
+    global _clf
+    if _clf is not None:
+        return _clf
     from transformers import pipeline as hf_pipeline, AutoTokenizer, AutoModelForSequenceClassification
-
     logger.info(f"Loading DistilBERT model: {DISTILBERT_MODEL}")
-
     tokenizer = AutoTokenizer.from_pretrained(DISTILBERT_MODEL)
     model     = AutoModelForSequenceClassification.from_pretrained(DISTILBERT_MODEL)
-
-    clf = hf_pipeline(
+    _clf = hf_pipeline(
         "sentiment-analysis",
         model=model,
         tokenizer=tokenizer,
-        device=-1,           # CPU
+        device=-1,
         truncation=True,
         max_length=MAX_REVIEW_TOKENS,
     )
     logger.info("DistilBERT model loaded successfully.")
-    return clf
+    return _clf
+
 
 
 def run_distilbert(df: pd.DataFrame, text_col: str = "review_clean") -> pd.DataFrame:
