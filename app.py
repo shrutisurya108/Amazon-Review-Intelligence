@@ -18,17 +18,6 @@ import streamlit as st
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-# Cloud environment setup — download models if not present
-import subprocess
-import spacy as _spacy_check
-try:
-    _spacy_check.load("en_core_web_sm")
-except OSError:
-    subprocess.run(
-        ["python", "-m", "spacy", "download", "en_core_web_sm"],
-        check=True, capture_output=True,
-    )
-
 # Download NLTK data if not present (required on Streamlit Cloud)
 import nltk
 import os
@@ -38,6 +27,16 @@ for corpus in ["stopwords", "wordnet", "omw-1.4"]:
         nltk.data.find(f"corpora/{corpus}")
     except LookupError:
         nltk.download(corpus, quiet=True)
+
+
+
+import nltk, os
+for _corpus in ["stopwords", "wordnet", "omw-1.4"]:
+    try:
+        nltk.data.find(f"corpora/{_corpus}")
+    except LookupError:
+        nltk.download(_corpus, quiet=True)
+
 
 # ── Page config — must be first Streamlit call ────────────────────────────────
 st.set_page_config(
