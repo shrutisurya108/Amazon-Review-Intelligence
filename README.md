@@ -41,7 +41,7 @@ a Streamlit dashboard deployed on Streamlit Cloud, with no inference at runtime.
 
 **Notable finding:** VADER outperforms DistilBERT by 6.4 percentage points on this corpus.
 Amazon reviews use direct, unambiguous sentiment language that a lexicon handles efficiently.
-DistilBERT was fine-tuned on SST-2 (movie reviews) — a different domain — which is exactly
+DistilBERT was fine-tuned on SST-2 (movie reviews), a different domain, which is exactly
 why domain-matched training data matters in real-world NLP.
 
 ---
